@@ -62,7 +62,11 @@ def load_rules():
 
 
 def scan(text, rules):
-    """统计命中情况，返回 (命中列表, 评分)。"""
+    """统计命中情况，返回 (命中列表, 评分)。
+
+    短词降噪：长度≤2的词（如"最后""此外"）在口语中常为正常用法，
+    需重复出现≥2次才计为 AI 痕迹。
+    """
     hits = []
     score = 0.0
     total_len = max(len(text), 1)
@@ -71,9 +75,12 @@ def scan(text, rules):
             if not w:
                 continue
             count = text.count(w)
-            if count > 0:
-                hits.append((cat, w, count))
-                score += WEIGHTS.get(cat, 1.0) * count
+            if count == 0:
+                continue
+            if len(w) <= 2 and count < 2:
+                continue
+            hits.append((cat, w, count))
+            score += WEIGHTS.get(cat, 1.0) * count
     # 归一化到 100：按每千字命中数估算，命中越多分越高
     per_1000 = score / total_len * 1000
     normalized = min(100, per_1000 * 3)
