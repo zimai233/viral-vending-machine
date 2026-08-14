@@ -1,0 +1,20 @@
+# 口播转写专名词表 (glossary)
+# 格式: 正确写法<TAB>易误识别写法(逗号分隔)
+# Whisper 转写后按本表批量修正专名误识别。可自行增补。
+
+郭浩楠	郭浩南,郭浩楠,郭浩男,过浩楠
+皇阿玛	皇阿码,皇阿蚂,皇阿马,黄阿玛
+林有感	林有七,林有淦,林有感,林友感
+iPhone	爱疯,iphone,爱凤
+iPad	爱拍的,ipad
+ChatGPT	chatgpt,差特,切特GPT
+Canva	砍va,砍瓦,canva
+Figma	菲格马,费格马,figma
+Adobe	阿多比,adobe
+剪映	剪影,剪盈
+抖音	抖因,抖荫
+小红书	小红薯,小红舒
+微信公众号	微信公众号,公众号
+B站	哔哩哔哩,b站
+Whisper	威士伯,whisper
+TikTok	tiktok,踢克托克

@@ -5,7 +5,9 @@ import sys
 import os
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-TESTS = ["test_collect.py", "test_update_library.py", "test_similarity.py"]
+TESTS = ["test_collect.py", "test_update_library.py", "test_similarity.py",
+         "test_deai.py", "test_enhance_transcript.py", "test_compliance.py",
+         "test_prepublish.py"]
 
 try:
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")

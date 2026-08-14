@@ -17,6 +17,12 @@
 - **案例库**：`assets/cases/` 每对标博主一文件，含口播全文+框架标签，新博主自动追加
 - **表达规范**：`references/style-guide.md` 沉淀的六大内容形式（揭秘/避坑/清单/金句/反差/观点）+ 开头钩子 + 正文结构 + 语言特征 + CTA
 - **防洗稿**：`scripts/similarity.py` n-gram 相似度检测，超标自动提示改写
+- **去AI味**：`scripts/deai.py` AI痕迹评分（模板连接词/空话/翻译腔识别）+ 保真合同锁定事实
+- **合规检测**：`scripts/compliance.py` 三级违禁词检测（硬性/风险/擦边），`references/banned-words.md` 可编辑词库
+- **发布前总检**：`scripts/prepublish_check.py` 一键检查 AI味/违禁词/字数/标题/洗稿，不通过不放行
+- **口播转写增强**：`scripts/enhance_transcript.py` 专名修正（glossary.tsv）+ 删气口 + 分段
+- **钩子/标题库**：`assets/hooks/` 自动从案例库沉淀，生成时检索复用
+- **知识库**：`assets/knowledge/` 对标分析/复盘结论落盘，跨任务决策有据可依
 - **采集管线**：抖音直连 API（绕开 MediaCrawler 签名 bug）+ 口播 Whisper 转写
 
 ## 安装（新电脑）

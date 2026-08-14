@@ -17,6 +17,12 @@
 - **Case library**: `assets/cases/` — one file per benchmark creator with full transcripts + framework tags; new creators auto-appended
 - **Style guide**: `references/style-guide.md` — distilled 6 content forms (reveal / avoid / list / quote / contrast / opinion) + opening hooks + body structure + voice patterns + CTA
 - **Anti-plagiarism**: `scripts/similarity.py` n-gram similarity check, flags drafts needing rewrite
+- **De-AI**: `scripts/deai.py` AI-trace scoring (template connectors / filler phrases / translationese) + fact-protection contract
+- **Compliance**: `scripts/compliance.py` 3-tier banned-word check (hard/risk/borderline), editable `references/banned-words.md`
+- **Pre-publish check**: `scripts/prepublish_check.py` one-shot gate: AI-trace / banned words / length / title / plagiarism
+- **Transcript enhancement**: `scripts/enhance_transcript.py` glossary fix (glossary.tsv) + filler removal + paragraphing
+- **Hook/headline library**: `assets/hooks/` auto-distilled from cases, reused at generation time
+- **Knowledge base**: `assets/knowledge/` persists benchmark analysis & review conclusions
 - **Pipeline**: Douyin direct API (bypasses MediaCrawler signing bug) + Whisper speech transcription
 
 ## Installation (New Machine)
