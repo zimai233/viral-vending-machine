@@ -16,6 +16,7 @@
 - **人设驱动**：`assets/persona.md` 定义"你是谁、怎么说话"，生成时强制贴合
 - **案例库**：`assets/cases/` 每对标博主一文件，含口播全文+框架标签，新博主自动追加
 - **表达规范**：`references/style-guide.md` 沉淀的六大内容形式（揭秘/避坑/清单/金句/反差/观点）+ 开头钩子 + 正文结构 + 语言特征 + CTA
+- **抖音口播规范**：`references/short-video-copywriting.md` 专门约束前3秒/前5秒、口播节奏、字幕画面、标题话题、评论 CTA、情感合规和数据复盘
 - **防洗稿**：`scripts/similarity.py` n-gram 相似度检测，超标自动提示改写
 - **去AI味**：`scripts/deai.py` AI痕迹评分（模板连接词/空话/翻译腔识别）+ 保真合同锁定事实
 - **合规检测**：`scripts/compliance.py` 三级违禁词检测（硬性/风险/擦边），`references/banned-words.md` 可编辑词库
@@ -56,6 +57,7 @@ viral-vending-machine/
 │   └── cases/            # 案例库（用户数据，每博主一文件 + index.md）
 ├── references/
 │   ├── style-guide.md    # 表达形式规范（生成必读）
+│   ├── short-video-copywriting.md # 抖音口播规范（抖音生成必读）
 │   ├── frameworks.md     # 选题方向/写作框架库（用户数据）
 │   ├── platform-rules.md # 各平台文案规则
 │   └── originality.md    # 防洗稿自检清单

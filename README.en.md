@@ -16,6 +16,7 @@
 - **Persona-driven**: `assets/persona.md` defines who you are and how you talk; generation strictly follows it
 - **Case library**: `assets/cases/` — one file per benchmark creator with full transcripts + framework tags; new creators auto-appended
 - **Style guide**: `references/style-guide.md` — distilled 6 content forms (reveal / avoid / list / quote / contrast / opinion) + opening hooks + body structure + voice patterns + CTA
+- **Douyin short-video guide**: `references/short-video-copywriting.md` — Douyin-first hooks, first-3/5-second value confirmation, pacing, subtitles, titles, CTAs, emotional-content safety, and post-publish review
 - **Anti-plagiarism**: `scripts/similarity.py` n-gram similarity check, flags drafts needing rewrite
 - **De-AI**: `scripts/deai.py` AI-trace scoring (template connectors / filler phrases / translationese) + fact-protection contract
 - **Compliance**: `scripts/compliance.py` 3-tier banned-word check (hard/risk/borderline), editable `references/banned-words.md`
@@ -56,6 +57,7 @@ viral-vending-machine/
 │   └── cases/            # Case library (user data, per-creator + index.md)
 ├── references/
 │   ├── style-guide.md    # Expression style guide (required reading)
+│   ├── short-video-copywriting.md # Douyin short-video guide (required for video copy)
 │   ├── frameworks.md     # Topic directions / writing frameworks (user data)
 │   ├── platform-rules.md # Per-platform copy rules
 │   └── originality.md    # Anti-plagiarism checklist
